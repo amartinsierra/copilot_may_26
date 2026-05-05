@@ -1,0 +1,1 @@
+-Los tipos de devolución de todos los métodos deben ser objetos, nunca primitivos

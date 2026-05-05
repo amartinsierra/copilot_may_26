@@ -5,7 +5,7 @@ import java.util.List;
 public class CalculosImpl implements Calculos {
 
 	@Override
-	public int verificar(int n, List<Integer> lista) {
+	public Integer verificar(int n, List<Integer> lista) {
 		//sustituye el codigo de este método por programación funcional con streams
 		return (int) lista.stream()
 				.filter(num -> num > n)
@@ -21,6 +21,11 @@ public class CalculosImpl implements Calculos {
 		return lista.stream()
 				.filter(num -> num > n)
 				.toList();
+	}
+
+	@Override
+	public Integer obtenerMayor(int n1, int n2) {
+		return Math.max(n1, n2);
 	}
 
 }
