@@ -1,0 +1,76 @@
+{
+  "servers": {
+    "io.github.github/github-mcp-server": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "requestInit": {
+        "headers": {}
+      },
+      "x-metadata": {
+        "registry": {
+          "api": {
+            "baseUrl": "https://api.mcp.github.com",
+            "version": "v0.1"
+          },
+          "mcpServer": {
+            "name": "io.github.github/github-mcp-server",
+            "version": "1.0.3"
+          }
+        }
+      }
+    },
+    "alumnos": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "C:/cursos/curso_copilot_backend_tragsa_mayo_2026/servidores_mcp/servidor_alumnos/server.js"
+      ]
+    },
+    "microsoft/playwright-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "x-metadata": {
+        "registry": {
+          "api": {
+            "baseUrl": "https://api.mcp.github.com",
+            "version": "v0.1"
+          },
+          "mcpServer": {
+            "name": "microsoft/playwright-mcp",
+            "version": "0.0.1-seed"
+          }
+        }
+      }
+    },
+"filesystem": {
+      "type": "stdio",
+
+      "command": "npx",
+
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:/temp"
+      ]
+    },
+"mysql": {
+      "type": "stdio",
+
+      "command": "npx",
+
+      "args": [
+        "-y",
+        "@f4ww4z/mcp-mysql-server",
+        "--host=localhost",
+        "--port=3307",
+        "--user=root",
+        "--password=root",
+        "--database=centralpedidos"
+      ]
+    }
+  }
+}
