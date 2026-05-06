@@ -1,16 +1,17 @@
-package init.service;
+package com.tragsa.microbuscador.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import init.model.Item;
-import init.repository.ItemsRepository;
+import com.tragsa.microbuscador.model.Item;
+import com.tragsa.microbuscador.repository.ItemsRepository;
+
+import lombok.RequiredArgsConstructor;
 @Service
+@RequiredArgsConstructor 
 public class BuscadorServiceImpl implements BuscadorService {
-	@Autowired
-	ItemsRepository itemsRepository;	
+	private final ItemsRepository itemsRepository;	
 	
 	@Override
 	public List<Item> buscarPorTematica(String tematica) {
@@ -18,7 +19,7 @@ public class BuscadorServiceImpl implements BuscadorService {
 	}
 	@Override
 	public boolean nuevoItem(Item item) {
-		if(itemsRepository.findFirstByUrl(item.getUrl())==null) {
+		if(itemsRepository.findFirstByUrl(item.getUrl()).isEmpty()){
 			itemsRepository.save(item);
 			return true;
 		}

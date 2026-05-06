@@ -1,6 +1,13 @@
 package com.tragsa.microalumnos.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "alumnos")
 public class AlumnoEntity {
+	@Id
 	private String dni;
 	private String nombre;
 	private String email;

@@ -1,8 +1,8 @@
-package init.service;
+package com.tragsa.microbuscador.service;
 
 import java.util.List;
 
-import init.model.Item;
+import com.tragsa.microbuscador.model.Item;
 
 public interface BuscadorService {
 	List<Item> buscarPorTematica(String tematica);

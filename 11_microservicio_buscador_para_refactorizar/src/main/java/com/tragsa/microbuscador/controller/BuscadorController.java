@@ -1,4 +1,4 @@
-package init.controller;
+package com.tragsa.microbuscador.controller;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import init.model.Item;
-import init.service.BuscadorService;
+import com.tragsa.microbuscador.model.Item;
+import com.tragsa.microbuscador.service.BuscadorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 

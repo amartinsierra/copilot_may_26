@@ -1,4 +1,4 @@
-package init;
+package com.tragsa.microbuscador;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package init;
+package com.tragsa.microtemas;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

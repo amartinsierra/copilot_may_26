@@ -1,4 +1,4 @@
-package init.model;
+package com.tragsa.microbuscador.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

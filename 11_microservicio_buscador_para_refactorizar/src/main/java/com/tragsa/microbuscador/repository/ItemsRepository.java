@@ -1,4 +1,4 @@
-package init.repository;
+package com.tragsa.microbuscador.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
-import init.model.Item;
+import com.tragsa.microbuscador.model.Item;
 
 public interface ItemsRepository extends JpaRepository<Item,Integer>{
 	List<Item> findByTematica(String tematica);
